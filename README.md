@@ -44,3 +44,22 @@
 
 > **На заметку**
 > В платной версии GitHub, для существует возможность создать набросок PR (Pull request Draft), позволяющий получить обратную связь по ходу работы над задачей, а по завершении опубликовать готовый PR из этого наброска.
+
+## Пояснения
+- Минимальный набор необходимых [инструкций Dockerfile](https://docs.docker.com/engine/reference/builder/) для изучения:
+  - [FROM](https://docs.docker.com/engine/reference/builder/#from)
+  - [COPY](https://docs.docker.com/engine/reference/builder/#copy)/[ADD]
+  - [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint)
+  - [CMD](https://docs.docker.com/engine/reference/builder/#cmd)
+  - [WORKDIR](https://docs.docker.com/engine/reference/builder/#workdir)
+  - [RUN](https://docs.docker.com/engine/reference/builder/#run)
+  - [VOLUME](https://docs.docker.com/engine/reference/builder/#volume)
+  - [LABEL](https://docs.docker.com/engine/reference/builder/#label)
+  - [USER](https://docs.docker.com/engine/reference/builder/#user)
+  - [ENV](https://docs.docker.com/engine/reference/builder/#env)
+  - [ARG](https://docs.docker.com/engine/reference/builder/#arg)
+- Для сборки обоих образов, используйте один Dockerfile и [milti-stage build](https://docs.docker.com/build/building/multi-stage/).
+- Автоматизация сборки осуществляется средствами Taskfile.
+- Оптимизация, в первую очередь, включает в себя:
+  - сокращение размера образа (используйте [docker history](https://docs.docker.com/engine/reference/commandline/history/) для анализа размера слоёв)
+  - максимальное использование кэша при изменении исходного кода приложения и повторной сборки.

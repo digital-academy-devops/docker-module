@@ -48,7 +48,8 @@
 ## Пояснения
 - Минимальный набор необходимых [инструкций Dockerfile](https://docs.docker.com/engine/reference/builder/) для изучения:
   - [FROM](https://docs.docker.com/engine/reference/builder/#from)
-  - [COPY](https://docs.docker.com/engine/reference/builder/#copy)/[ADD]
+  - [COPY](https://docs.docker.com/engine/reference/builder/#copy)
+  - [ADD](https://docs.docker.com/engine/reference/builder/#add)
   - [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint)
   - [CMD](https://docs.docker.com/engine/reference/builder/#cmd)
   - [WORKDIR](https://docs.docker.com/engine/reference/builder/#workdir)

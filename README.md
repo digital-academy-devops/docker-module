@@ -17,7 +17,7 @@
 
 ## Задание
 
-В качестве тестового приложения, используем [пример](https://github.com/mostashkin/cv) реализации [задания](https://github.com/digital-academy-devops/git-module) по модулю Git. 
+В качестве тестового приложения, используем [пример](https://github.com/digital-academy-devops/git-example) реализации [задания](https://github.com/digital-academy-devops/git-module) по модулю Git. 
 
 1. Создайте собственный форк репозитория с примером.
 1. Добавьте Dockerfile для сборки следующих образов. 
